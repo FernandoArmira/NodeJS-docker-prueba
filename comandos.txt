@@ -1,0 +1,7 @@
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+sudo docker login
+sudo docker tag node-docker-helloworld doomsday2195/helloworld
+sudo docker push doomsday2195/helloworld
+docker pull doomsday2195/helloworld:latest
