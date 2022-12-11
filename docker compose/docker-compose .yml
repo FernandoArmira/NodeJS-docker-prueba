@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: alexanderavalos/prueba
+    environment:
+      LLAVE_PUBLICA: AKIAYAC4AQK6M7KRPJ6I
+      LLAVE_SECRETA: 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
+      BUCKET_NAME: bucketpi-9
+      BUCKET_REGION: us-east-2
+      API_URL: https://ousoi9sno9.execute-api.us-west-2.amazonaws.com/
+    ports:
+      - "8080:8080"
+    restart: always
